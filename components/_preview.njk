@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    
-    <!-- TODO favicon TODO -->
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
     <!-- Stylesheets-->
     <link rel="stylesheet" media="screen" type="text/css" href="//fonts.googleapis.com/css?family=Libre+Franklin:200,300,500,600,300italic">
     <link rel="stylesheet" media="screen" href="{{ '/dist/css/bootstrap.min.css' | path }}">
@@ -20,7 +24,7 @@
       gtag('config', 'UA-108459957-1');
     </script></head>
   
-  <body class=" rd-navbar-corporate-linked"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-floating cc-type-info cc-theme-block cc-bottom cc-left cc-color-override-1122976452  cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">Durch die Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="/datenschutz/" rel="noopener noreferrer nofollow" target="_blank">Datenschutzerklärung.</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">OK</a></div><!--googleon: all--></div>
+  <body class=" rd-navbar-corporate-linked"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-floating cc-type-info cc-theme-block cc-bottom cc-left cc-color-override-1122976452  cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">Durch die Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.presentation-power.ch/datenschutz/" rel="noopener noreferrer nofollow" target="_blank">Datenschutzerklärung.</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">OK</a></div><!--googleon: all--></div>
     <!-- Page -->
     <div class="page">
       <div id="page-loader" style="display: none;">
@@ -37,7 +41,9 @@
             <div class="rd-navbar-panel">
               <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
               <!-- RD Navbar Brand-->
-              <div class="rd-navbar-brand rd-navbar-static--hidden"><a class="brand-name" href="index.html"><img src="../../images/logo-174x32.png" alt="" width="174" height="32"></a></div>
+              <div class="rd-navbar-brand rd-navbar-static--hidden">
+                {% render '@logo' %}
+              </div>
             </div>
             <!-- RD Navbar Top Panel-->
             <div class="rd-navbar-top-panel rd-navbar-top-panel_extended">
@@ -61,7 +67,9 @@
                   </div>
                   <div class="rd-navbar-top-panel__content-bottom rd-navbar-content_middle rd-navbar-content_justify">
                     <!-- RD Navbar Brand-->
-                    <div class="rd-navbar-brand rd-navbar-fixed--hidden"><a class="brand-name" href="index.html"><img src="../../images/logo-174x32.png" alt="PRESENTATION POWER Logo" width="174" height="32"></a></div>
+                    <div class="rd-navbar-brand rd-navbar-fixed--hidden">
+                      {% render '@logo' %}
+                    </div>
                     <ul class="list-bordered">
                       <li>
                         <div class="unit flex-row align-items-center unit-spacing-sm">
@@ -126,7 +134,7 @@
       </section>
       <section class="text-center">
         <!-- RD Parallax-->
-        <div class="parallax-container bg-image parallax-header rd-parallax-light" data-parallax-img="parallax.jpg"><div class="material-parallax parallax"><img src="parallax.jpg" alt="" style="display: block; transform: translate3d(-50%, 9px, 0px);"></div>
+        <div class="parallax-container bg-image parallax-header rd-parallax-light" data-parallax-img="{{ '/dist/img/parallax.jpg' | path }}"><div class="material-parallax parallax"><img src="{{ '/dist/img/parallax.jpg' | path }}" alt="" style="display: block; transform: translate3d(-50%, 9px, 0px);"></div>
           <div class="parallax-content">
             <div class="parallax-header__inner">
               <div class="parallax-header__content">
@@ -190,21 +198,21 @@
                   <li>
                       <!-- Comment minimal-->
                       <article class="comment-minimal">
-                        <p class="comment-minimal__link"><a href="../../tipps/praesentations-rezept/">Grund-Rezept für überzeugendes Präsentieren!</a></p>
+                        <p class="comment-minimal__link"><a href="https://www.presentation-power.ch/tipps/praesentations-rezept/">Grund-Rezept für überzeugendes Präsentieren!</a></p>
                       </article>
                     </li>
                 
                   <li>
                       <!-- Comment minimal-->
                       <article class="comment-minimal">
-                        <p class="comment-minimal__link"><a href="../../tipps/angela_merkel_und_die_kraft_der_emotionen/">Angela Merkel und die Kraft der Emotionen</a></p>
+                        <p class="comment-minimal__link"><a href="https://www.presentation-power.ch/tipps/angela_merkel_und_die_kraft_der_emotionen/">Angela Merkel und die Kraft der Emotionen</a></p>
                       </article>
                     </li>
                 
                   <li>
                       <!-- Comment minimal-->
                       <article class="comment-minimal">
-                        <p class="comment-minimal__link"><a href="../../tipps/erfolgreiches-auftreten/">Erfolgreiches Auftreten</a></p>
+                        <p class="comment-minimal__link"><a href="https://www.presentation-power.ch/tipps/erfolgreiches-auftreten/">Erfolgreiches Auftreten</a></p>
                       </article>
                     </li>
                 
